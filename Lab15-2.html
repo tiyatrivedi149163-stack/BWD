@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Color Table</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+
+    <style>
+        .color-table td {
+            height: 100px;
+            text-align: center;
+            vertical-align: middle !important;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .red:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .blue:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .green:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .yellow:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .orange:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .purple:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        .pink:hover {
+            background-color: pink;
+            color: black;
+        }
+
+        .cyan:hover {
+            background-color: cyan;
+            color: black;
+        }
+
+        .brown:hover {
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2 class="text-center">Color Table</h2>
+
+    <table class="table table-bordered color-table">
+        <tr>
+            <td class="red">Red</td>
+            <td class="blue">Blue</td>
+            <td class="green">Green</td>
+        </tr>
+
+        <tr>
+            <td class="yellow">Yellow</td>
+            <td class="orange">Orange</td>
+            <td class="purple">Purple</td>
+        </tr>
+
+        <tr>
+            <td class="pink">Pink</td>
+            <td class="cyan">Cyan</td>
+            <td class="brown">Brown</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
