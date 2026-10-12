@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<style>
+body {
+  font-family: Arial;
+  background: #f5f3f4;
+  text-align: center;
+  padding: 40px;
+}
+.box {
+  background: rgb(244, 163, 190);
+  max-width: 320px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #eee5e5;
+}
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+button {
+  background: #eb2768;
+  color: rgb(240, 234, 236);
+  border: 0;
+  cursor: pointer;
+}
+a, label { color: #f0f3f6; cursor: pointer; }
+.page { display: none; }
+#login:checked ~ .box .login,
+#register:checked ~ .box .register,
+#forgot:checked ~ .box .forgot,
+#logout:checked ~ .box .logout { display: block; }
+input[type=radio] { display: none; }
+</style>
+</head>
+<body>
+
+<input type="radio" name="page" id="login" checked>
+<input type="radio" name="page" id="register">
+<input type="radio" name="page" id="forgot">
+<input type="radio" name="page" id="logout">
+
+<div class="box">
+
+<div class="page login">
+<h2>Login</h2>
+<form>
+<input type="email" placeholder="Email" required>
+<input type="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+<p><label for="forgot">Forgot Password?</label></p>
+<p>New user? <label for="register">Register</label></p>
+</div>
+
+<div class="page register">
+<h2>Registration</h2>
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email" required>
+<input type="password" placeholder="Password" required>
+<button type="submit">Register</button>
+</form>
+<p>Already registered? <label for="login">Login</label></p>
+</div>
+
+<div class="page forgot">
+<h2>Forgot Password</h2>
+<form>
+<input type="email" placeholder="Enter your email" required>
+<button type="submit">Reset Password</button>
+</form>
+<p><label for="login">Back to Login</label></p>
+</div>
+
+<div class="page logout">
+<h2>Logged Out</h2>
+<p>You have logged out.</p>
+<label for="login">Login Again</label>
+</div>
+
+<hr>
+<label for="logout">Logout</label>
+
+</div>
+</body>
+</html>
